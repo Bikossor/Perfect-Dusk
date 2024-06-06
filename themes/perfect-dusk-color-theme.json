@@ -185,8 +185,8 @@
       }
     },
     {
-      "name": "Entity Types",
-      "scope": ["support.type"],
+      "name": "Primitive and built-in types",
+      "scope": ["support.type.builtin", "support.type.primitive"],
       "settings": {
         "foreground": "#AAFF80",
         "fontStyle": "underline"
