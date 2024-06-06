@@ -2,10 +2,7 @@
   "name": "perfect-dusk",
   "displayName": "Perfect Dusk",
   "description": "Beautiful and accessible dark theme for Visual Studio Code",
-  "author": {
-    "name": "André Lichtenthäler",
-    "url": "https://lichten.me"
-  },
+  "author": "André Lichtenthäler",
   "version": "1.0.0-alpha.0",
   "engines": {
     "vscode": "^1.89.0"
