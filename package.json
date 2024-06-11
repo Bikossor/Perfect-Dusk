@@ -20,5 +20,9 @@
         "path": "./themes/perfect-dusk-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bikossor/Perfect-Dusk.git"
   }
 }
