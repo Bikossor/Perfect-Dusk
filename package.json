@@ -3,6 +3,7 @@
   "displayName": "Perfect Dusk",
   "description": "Beautiful and accessible dark theme for Visual Studio Code",
   "author": "Bikossor",
+  "publisher": "Bikossor",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.89.0"
