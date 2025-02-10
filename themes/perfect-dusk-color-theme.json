@@ -23,7 +23,12 @@
     "tab.activeBorderTop": "#fff",
 
     "titleBar.activeBackground": "#111",
-    "titleBar.activeForeground": "#fff"
+    "titleBar.activeForeground": "#fff",
+
+    "statusBar.background": "#222",
+    "statusBar.foreground": "#bbb",
+    "statusBar.noFolderBackground": "#222",
+    "statusBar.noFolderForeground": "#bbb"
   },
   "tokenColors": [
     {
