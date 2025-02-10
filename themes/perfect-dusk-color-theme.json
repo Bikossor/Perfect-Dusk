@@ -20,7 +20,7 @@
     "sideBar.foreground": "#fff",
     "sideBarTitle.foreground": "#fff",
 
-    "tab.activeBorderTop": "#fff",
+    "tab.activeBorderTop": "#e2004f",
     "activityBar.activeBorder": "#e2004f",
 
     "titleBar.activeBackground": "#111",
