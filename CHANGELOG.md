@@ -4,6 +4,16 @@ All notable changes to the "perfect-dusk" extension will be documented in this f
 
 Check [Keep a Changelog](https://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.0] - 2025-02-10
+
+### Added
+
+- Set color of `activityBar.activeBorder` to `#e2004f`
+
+### Changed
+
+- Updated color of `tab.activeBorderTop` to `#e2004f`
+
 ## [1.1.0] - 2025-02-10
 
 ### Added
