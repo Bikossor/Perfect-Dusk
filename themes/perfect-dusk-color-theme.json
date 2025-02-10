@@ -21,6 +21,7 @@
     "sideBarTitle.foreground": "#fff",
 
     "tab.activeBorderTop": "#fff",
+    "activityBar.activeBorder": "#e2004f",
 
     "titleBar.activeBackground": "#111",
     "titleBar.activeForeground": "#fff",
