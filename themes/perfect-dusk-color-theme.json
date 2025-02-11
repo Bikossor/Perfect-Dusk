@@ -343,6 +343,44 @@
         "fontStyle": "italic",
         "foreground": "#FF5370"
       }
+    },
+    {
+      "name": "EditorConfig",
+      "scope": [
+        "constant.language.space.editorconfig",
+        "constant.language.tab.editorconfig",
+        "constant.language.unset.editorconfig",
+        "constant.numeric.decimal.integer.int.editorconfig",
+        "constant.language.lf.editorconfig",
+        "constant.language.crlf.editorconfig",
+        "constant.language.cr.editorconfig",
+        "constant.language.unset.editorconfig",
+        "constant.language.charset.encoding.latin1.editorconfig",
+        "constant.language.charset.encoding.utf-16be.editorconfig",
+        "constant.language.charset.encoding.utf-16le.editorconfig",
+        "constant.language.charset.encoding.utf-8.editorconfig",
+        "constant.language.charset.encoding.utf-8-bom.editorconfig",
+        "constant.language.charset.encoding.unset.editorconfig",
+        "constant.language.boolean.true.editorconfig",
+        "constant.language.boolean.false.editorconfig",
+        // Punctuations
+        "punctuation.definition.brace.bracket.curly.begin.editorconfig",
+        "punctuation.definition.brace.bracket.curly.end.editorconfig",
+        "punctuation.separator.delimiter.comma.editorconfig"
+      ],
+      "settings": {
+        "foreground": "#80D4FF"
+      }
+    },
+    {
+      "name": "EditorConfig brackets",
+      "scope": [
+        "punctuation.section.brace.bracket.square.begin.editorconfig",
+        "punctuation.section.brace.bracket.square.end.editorconfig"
+      ],
+      "settings": {
+        "foreground": "#B580FF"
+      }
     }
   ]
 }
