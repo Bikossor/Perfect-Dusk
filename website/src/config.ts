@@ -4,3 +4,21 @@ export const APP_DESCRIPTION =
 export const AUTHOR_NAME = "Bikossor";
 export const AUTHOR_URL = "https://lichten.me";
 
+type CodeEditor = {
+  name: string;
+  icon?: string;
+  addition?: string;
+};
+
+export const CODE_EDITORS: ReadonlyArray<CodeEditor> = [
+  {
+    name: "Visual Studio Code",
+  },
+  {
+    name: "VSCodium",
+  },
+  {
+    name: "Zed",
+    addition: "Coming soon",
+  },
+];

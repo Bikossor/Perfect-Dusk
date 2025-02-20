@@ -1,0 +1,24 @@
+---
+import { CODE_EDITORS } from "../config";
+---
+
+<div>
+  <h2>Available for your favorite code editors</h2>
+  <ul
+    style={{ display: "grid", "grid-template-columns": "1fr 1fr", gap: "1rem" }}
+  >
+    {
+      CODE_EDITORS.map((editor) => (
+        <li
+          style={{
+            display: "flex",
+            "flex-direction": "column",
+          }}
+        >
+          <span>{editor.name}</span>
+          <span>{editor.addition}</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
