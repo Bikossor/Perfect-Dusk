@@ -1,0 +1,40 @@
+---
+import { COLOR_PALETTE } from "../config";
+---
+
+<div>
+  <h2>Beautiful and accessible color palette</h2>
+
+  <li
+    style={{
+      display: "grid",
+      "grid-template-columns": "1fr 1fr 1fr",
+      gap: "1rem",
+      color: "#fff",
+      background: "#222",
+    }}
+  >
+    <div
+      style={{
+        display: "grid",
+        "grid-template-columns": "5rem 1fr",
+        gap: "1rem",
+      }}
+    >
+      {
+        COLOR_PALETTE.map((color) => (
+          <div
+            style={{
+              background: color.hex,
+              width: "4rem",
+              height: "4rem",
+              borderRadius: "50%",
+            }}
+          >
+            <span>{color.name}</span>
+          </div>
+        ))
+      }
+    </div>
+  </li>
+</div>
