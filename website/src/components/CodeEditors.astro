@@ -17,6 +17,11 @@ import { CODE_EDITORS } from "../config";
           style={{
             display: "flex",
             "flex-direction": "column",
+            border: "2px solid #444",
+            padding: "2rem",
+            "border-radius": "1rem",
+            alignItems: "center",
+            gap: "1rem",
           }}
         >
           <img
@@ -24,8 +29,17 @@ import { CODE_EDITORS } from "../config";
             alt={editor.name}
             style={{ width: "100px", height: "100px" }}
           />
-          <span>{editor.name}</span>
-          <span>{editor.addition}</span>
+          <div
+            style={{
+              display: "flex",
+              "flex-direction": "column",
+              alignItems: "center",
+              gap: "0.5rem",
+            }}
+          >
+            <span style={{ fontSize: "1.25rem" }}>{editor.name}</span>
+            <span style={{ fontSize: ".875rem" }}>{editor.addition}</span>
+          </div>
         </li>
       ))
     }
