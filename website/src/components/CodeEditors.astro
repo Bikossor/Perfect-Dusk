@@ -15,6 +15,11 @@ import { CODE_EDITORS } from "../config";
             "flex-direction": "column",
           }}
         >
+          <img
+            src={editor.icon?.src}
+            alt={editor.name}
+            style={{ width: "100px", height: "100px" }}
+          />
           <span>{editor.name}</span>
           <span>{editor.addition}</span>
         </li>

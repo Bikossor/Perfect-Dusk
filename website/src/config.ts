@@ -1,3 +1,5 @@
+import { VSCodiumIcon, VisualStudioCodeIcon, ZedIcon } from "./icons";
+
 export const APP_NAME = "Perfect Dusk";
 export const APP_DESCRIPTION =
   "Beautiful and accessible dark theme for your favorite code editor";
@@ -6,19 +8,22 @@ export const AUTHOR_URL = "https://lichten.me";
 
 type CodeEditor = {
   name: string;
-  icon?: string;
+  icon?: ImageMetadata;
   addition?: string;
 };
 
 export const CODE_EDITORS: ReadonlyArray<CodeEditor> = [
   {
     name: "Visual Studio Code",
+    icon: VisualStudioCodeIcon,
   },
   {
     name: "VSCodium",
+    icon: VSCodiumIcon,
   },
   {
     name: "Zed",
+    icon: ZedIcon,
     addition: "Coming soon",
   },
 ];
