@@ -4,7 +4,7 @@ import { CODE_EDITORS } from "../config";
 
 <div>
   <h2>Available for your favorite code editors</h2>
-  <ul
+  <div
     style={{
       display: "grid",
       "grid-template-columns": "1fr 1fr 1fr",
@@ -13,7 +13,7 @@ import { CODE_EDITORS } from "../config";
   >
     {
       CODE_EDITORS.map((editor) => (
-        <li
+        <div
           style={{
             display: "flex",
             "flex-direction": "column",
@@ -40,8 +40,8 @@ import { CODE_EDITORS } from "../config";
             <span style={{ fontSize: "1.25rem" }}>{editor.name}</span>
             <span style={{ fontSize: ".875rem" }}>{editor.addition}</span>
           </div>
-        </li>
+        </div>
       ))
     }
-  </ul>
+  </div>
 </div>
