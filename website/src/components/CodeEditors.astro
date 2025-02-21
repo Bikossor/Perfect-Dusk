@@ -4,26 +4,10 @@ import { CODE_EDITORS } from "../config";
 
 <div>
   <h2>Available for your favorite code editors</h2>
-  <div
-    style={{
-      display: "grid",
-      "grid-template-columns": "1fr 1fr 1fr",
-      gap: "1rem",
-    }}
-  >
+  <div class="code-editors--grid">
     {
       CODE_EDITORS.map((editor) => (
-        <div
-          style={{
-            display: "flex",
-            "flex-direction": "column",
-            border: "2px solid #444",
-            padding: "2rem",
-            "border-radius": "1rem",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
+        <div class="code-editors--item">
           <img
             src={editor.icon?.src}
             alt={editor.name}
@@ -45,3 +29,27 @@ import { CODE_EDITORS } from "../config";
     }
   </div>
 </div>
+
+<style>
+  .code-editors--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .code-editors--grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .code-editors--item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #444;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>
