@@ -5,36 +5,56 @@ import { COLOR_PALETTE } from "../config";
 <div>
   <h2>Beautiful and accessible color palette</h2>
 
-  <li
-    style={{
-      display: "grid",
-      "grid-template-columns": "1fr 1fr 1fr",
-      gap: "1rem",
-      color: "#fff",
-      background: "#222",
-    }}
-  >
-    <div
-      style={{
-        display: "grid",
-        "grid-template-columns": "5rem 1fr",
-        gap: "1rem",
-      }}
-    >
-      {
-        COLOR_PALETTE.map((color) => (
+  <li class="color-palette--grid">
+    {
+      COLOR_PALETTE.toSorted((a, b) => a.name.localeCompare(b.name)).map(
+        (color) => (
           <div
             style={{
-              background: color.hex,
-              width: "4rem",
-              height: "4rem",
-              borderRadius: "50%",
+              display: "flex",
+              flexDirection: "row",
+              gap: "1rem",
+              alignItems: "center",
             }}
           >
+            <div
+              style={{
+                background: color.hex,
+                width: "4rem",
+                height: "4rem",
+                borderRadius: "50%",
+              }}
+            />
             <span>{color.name}</span>
           </div>
-        ))
-      }
-    </div>
+        )
+      )
+    }
   </li>
 </div>
+
+<style>
+  .color-palette--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    .color-palette--grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .color-palette--grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .color-palette--grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
